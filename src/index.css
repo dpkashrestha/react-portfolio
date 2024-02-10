@@ -11,9 +11,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
-a {
+/* a {
   font-weight: 500;
   color: #a31616;
   text-decoration: inherit;
@@ -33,7 +33,7 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-} */
+} 
 
 /* button {
   border-radius: 8px;
@@ -52,9 +52,9 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -65,104 +65,31 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
+}  */
 
------------------------ :root {
+:root {
   /* declare a variable with `--` syntax */
   --my-text-color: rgba(200, 212, 187, 0.961);
   --my-theme-color: rgba(0, 0, 0, 0.961);
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 main {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--my-theme-color);
-}
-
-body {
-  font-family: Arial;
-  margin: 0;
-  background-color: var(--my-theme-color);
-}
-
-.main-header {
-  display: flex;
-  flex-wrap: wrap;
-  /* Centers along the main axis determined by flex-direction */
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 60px;
-  background: black;
-  background-image: url("../images/pexels-elijah.jpg");
-  background-size: cover;
-  color: white;
-}
-
-.main-header section {
-  display: flex;
-  flex-direction: row;
-}
-
-.main-header h2 {
-  padding: 10px 10px 10px 20px;
+  background-color: rgba(200, 212, 187, 0.961);
 }
 
 .avatar {
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
+  width: 300;
+  height: 300;
   border-radius: 50%;
-}
-
-nav {
-  display: flex;
-  /* Justifies content to the end */
-  justify-content: flex-end;
-  background-color: var(--my-theme-color);
-}
-
-nav a {
-  color: var(--my-text-color);
-  padding: 14px 20px;
-  text-decoration: solid;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* Style the section containers */
-.section-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 20px;
-}
-
-/* Style the aside elements within the section containers */
-.section-container aside {
-  flex: 1;
-  background-color: var(--my-theme-color);
-  max-width: 300px;
-  padding: 80px;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-  border-right: 4px solid rgb(157, 8, 8);
-  color: var(--my-text-color);
-}
-
-/* Style the div elements within the section containers */
-.section-container .aside-content {
-  display: flex;
-  flex: 2;
-  background-color: var(--my-text-color);
-  padding: 20px; /*Add padding for spacing  */
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .card {
@@ -192,50 +119,7 @@ nav a {
   height: 300px;
 }
 
-#first-project {
-  max-width: fit-content;
-  min-width: fit-content;
-}
-
-#first-project img {
-  height: fit-content;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 5%;
-  text-align: center;
-  background: var(--my-theme-color);
-  color: var(--my-text-color);
-}
-
-footer a {
-  color: var(--my-text-color);
-}
-
 @media screen and (max-width: 768px) {
-  /* Change flex direction to stack elements vertically */
-  .section-container {
-    flex-direction: column;
-  }
-
-  .section-container aside {
-    max-height: 50px;
-    padding: 30px;
-  }
-
-  /* Reset flex properties for stacking */
-  .section-container aside,
-  .section-container .aside-content {
-    flex: auto;
-    min-width: auto;
-    max-width: 100%;
-    border: 0;
-  }
-
   /* Adjust card styles for smaller screens */
   .card {
     max-width: 100%; /* Allow cards to take full width on smaller screens */

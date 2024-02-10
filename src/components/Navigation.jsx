@@ -1,26 +1,38 @@
 // Bringing in the required import from 'react-router-dom'
+
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "react-bootstrap/Navbar";
 
 function Navigation() {
-  // The Navbar UI component will render each of the Link elements in the links prop
   return (
-    <Navbar
-      links={[
-        <Link key={1} className="nav-link text-light" to="/">
-          About Me
-        </Link>,
-        <Link key={2} className="nav-link text-light" to="/portfolio">
-          Portfolio
-        </Link>,
-        <Link key={3} className="nav-link text-light" to="/contact">
-          Contact Me
-        </Link>,
-        <Link key={4} className="nav-link text-light" to="/resume">
-          Resume
-        </Link>,
-      ]}
-    />
+    <Navbar expand="lg" className="bg-body-tertiary header">
+      <Container>
+        <Navbar.Brand as={Link} to="/" className="brand">
+          Dipika Shrestha
+        </Navbar.Brand>
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto"></Nav>
+          <Nav>
+            <Nav.Link as={Link} to="/">
+              About Me
+            </Nav.Link>
+            <Nav.Link as={Link} to="/portfolio">
+              Portfolio
+            </Nav.Link>
+            <Nav.Link as={Link} to="/contact">
+              Contact
+            </Nav.Link>
+            <Nav.Link as={Link} to="/resume">
+              Resume
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
