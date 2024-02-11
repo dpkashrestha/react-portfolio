@@ -1,8 +1,44 @@
-# React + Vite
+# React Portfolio ![Static Badge](https://img.shields.io/badge/license-MIT-blue)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project builds a portfolio web page as a single-page application using React library. It hosts my information on the `About Me` page, demonstrates all my work samples in the `Projects` page, gives visitors a way to contact me with the `Contact` form and also provides a way to download my resume on the `Resume` page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application is built with single responsibility components laid out on various pages. The navigation is managed with "react-router-dom". I have also used "react-bootstrap" library components to ease the content design.
+
+It is deployed on `Netlify`.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshot](#screenshot)
+- [Deployed App](#deployed-app)
+- [License](#license)
+- [Question](#question)
+
+## Installation
+
+npm install
+
+## Usage
+
+1. cmd> npm run build
+2. cmd> npm run dev
+
+## Screenshot
+
+## Deployed App
+
+https://main--spontaneous-cobbler-6ad048.netlify.app/
+
+## License
+
+<a href=https://opensource.org/licenses/MIT>MIT</a>
+
+## Question
+
+If you have any questions, please contact me at dpkashrestha7@gmail.com.
+
+Here is my GitHub link
+https://github.com/dpkashrestha

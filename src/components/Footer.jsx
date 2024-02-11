@@ -1,6 +1,7 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+// Using fontawesome library for icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -8,6 +9,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
+// specific styles for footer
 const footerStyles = {
   text: {
     color: "black",
@@ -19,6 +21,7 @@ const footerStyles = {
 };
 
 function Footer() {
+  // This component builds the footer content with various social profiles.
   return (
     <footer className=" py-3 footer">
       <Row className="justify-content-center">

@@ -9,6 +9,7 @@ import financeHandler from "../../assets/images/finance-handler.png";
 import techBlog from "../../assets/images/tech-blog.png";
 import pwaTextEditor from "../../assets/images/pwa-text-editor.png";
 
+// This data is using to show all the projects using the Project component
 const projectData = [
   {
     imageSrc: passwordGenerator,

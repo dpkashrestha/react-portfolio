@@ -5,6 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
 function Project({ title, description, imageSrc, github, deployed }) {
+  // This builds a card component to display each project
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img
