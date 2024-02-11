@@ -1,3 +1,9 @@
+/* 6b9080
+a4c3b2
+cce3de
+eaf4f4
+f6fff8 */
+
 #root {
   max-width: auto;
   margin: 0 auto;
@@ -27,6 +33,7 @@
 
 .footer {
   flex: 0 0 auto; /* Non-flexible footer */
+  background-color: #2b3035;
 }
 
 .brand {
@@ -43,11 +50,11 @@
 .btn {
   margin-top: 20px;
   margin-bottom: 10px;
-  background-color: #1b3d2e;
+  background-color: #2b3035;
 }
 
 .btn:hover {
-  background-color: #35ea7d;
+  background-color: #6b9080;
 }
 
 .resume {

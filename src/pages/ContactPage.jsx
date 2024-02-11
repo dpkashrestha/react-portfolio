@@ -95,6 +95,7 @@ function Contact() {
                 onChange={handleChange}
                 onBlur={handleOnBlur}
                 placeholder="Enter your message"
+                required
                 isInvalid={!validMessage}
               />
               <Form.Control.Feedback type="invalid">

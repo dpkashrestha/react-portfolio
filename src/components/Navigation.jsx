@@ -7,7 +7,13 @@ import Navbar from "react-bootstrap/Navbar";
 
 function Navigation() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary header">
+    <Navbar
+      expand="lg"
+      className="bg-body-tertiary header"
+      bg="dark"
+      data-bs-theme="dark"
+      style={{ backgroundColor: "#6b9080" }}
+    >
       <Container>
         <Navbar.Brand as={Link} to="/" className="brand">
           Dipika Shrestha

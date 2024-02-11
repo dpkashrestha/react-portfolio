@@ -7,7 +7,11 @@ import { faRocket } from "@fortawesome/free-solid-svg-icons";
 function Project({ title, description, imageSrc, github, deployed }) {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={imageSrc} />
+      <Card.Img
+        variant="top"
+        src={imageSrc}
+        style={{ border: "0.5px solid black" }}
+      />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>

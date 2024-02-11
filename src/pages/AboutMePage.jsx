@@ -27,11 +27,6 @@ function AboutMePage() {
             challenges and turning ideas into reality.
           </p>
           <p>
-            My commitment to learning is unwavering. I'm dedicated to mastering
-            new technologies and using my skills to solve complex real-world
-            problems.
-          </p>
-          <p>
             Thank you for visiting my portfolio. Let's connect and explore how
             we can shape the future together through technology.
           </p>

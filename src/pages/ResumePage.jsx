@@ -61,7 +61,12 @@ function Resume() {
         </Card>
       </div>
       <div className="d-flex justify-content-center pt-5">
-        <a href={dpkaResume} style={downloadStyles.link} target="_blank">
+        <a
+          href={dpkaResume}
+          style={downloadStyles.link}
+          target="_blank"
+          download
+        >
           <FontAwesomeIcon
             className="download-icon"
             icon={faFileArrowDown}

@@ -13,14 +13,14 @@ const footerStyles = {
     color: "black",
   },
   link: {
-    color: "black",
+    color: "#9FA2A4",
     textDecoration: "none",
   },
 };
 
 function Footer() {
   return (
-    <footer className="bg-body-tertiary py-3 footer">
+    <footer className=" py-3 footer">
       <Row className="justify-content-center">
         <Col>
           <ul
