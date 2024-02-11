@@ -9,14 +9,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const footerStyles = {
-  heading: {
-    color: "#333", // Dark color for headings
-  },
   text: {
-    color: "#666", // Slightly darker color for regular text
+    color: "black",
   },
   link: {
-    color: "#666", // Slightly darker color for links
+    color: "black",
+    textDecoration: "none",
   },
 };
 
@@ -30,17 +28,29 @@ function Footer() {
             style={footerStyles.text}
           >
             <li className="me-3">
-              <a href="#!" style={footerStyles.link}>
+              <a
+                href="https://github.com/dpkashrestha"
+                style={footerStyles.link}
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faGithub} /> GitHub
               </a>
             </li>
             <li className="me-3">
-              <a href="#!" style={footerStyles.link}>
+              <a
+                href="https://twitter.com/?lang=en"
+                style={footerStyles.link}
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faTwitter} /> Twitter
               </a>
             </li>
             <li>
-              <a href="#!" style={footerStyles.link}>
+              <a
+                href="https://www.linkedin.com/"
+                style={footerStyles.link}
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
               </a>
             </li>

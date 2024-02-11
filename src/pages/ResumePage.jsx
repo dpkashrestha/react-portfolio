@@ -1,10 +1,22 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import dpkaResume from "../assets/dpka-resume-dummy.pdf";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+
+const downloadStyles = {
+  link: {
+    color: "black",
+  },
+};
 
 function Resume() {
   return (
     <>
-      <h1>Resume</h1>
+      <div className="container page-header">
+        <h1>Resume</h1>
+      </div>
+
       <div className="resume col d-flex flex-wrap justify-content-center pt-5">
         <Card style={{ width: "18rem" }}>
           <Card.Header>Front-end Proficiencies</Card.Header>
@@ -47,6 +59,16 @@ function Resume() {
             <ListGroup.Item>Insomnia/Postman</ListGroup.Item>
           </ListGroup>
         </Card>
+      </div>
+      <div className="d-flex justify-content-center pt-5">
+        <a href={dpkaResume} style={downloadStyles.link} target="_blank">
+          <FontAwesomeIcon
+            className="download-icon"
+            icon={faFileArrowDown}
+            size="2x"
+          />
+          Download Resume
+        </a>
       </div>
     </>
   );

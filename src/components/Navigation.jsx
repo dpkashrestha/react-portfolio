@@ -16,7 +16,7 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto"></Nav>
-          <Nav>
+          <Nav variant="underline" defaultActiveKey="/">
             <Nav.Link as={Link} to="/">
               About Me
             </Nav.Link>
