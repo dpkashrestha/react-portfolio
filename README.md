@@ -27,6 +27,8 @@ npm install
 2. cmd> npm run dev
 
 ## Screenshot
+ <img width="1724" alt="react-portfolio" src="https://github.com/dpkashrestha/react-portfolio/assets/142865374/c592e46b-e530-4614-912a-426d71a2842c">
+
 
 ## Deployed App
 
