@@ -1,63 +1,19 @@
-import passwordGenerator from "../../assets/images/pwd-generator-screenshot.png";
-import codeQuiz from "../../assets/images/quiz-screenshot.png";
-import workDayScheduler from "../../assets/images/workday-scheduler-screenshot.png";
-import weatherForecast from "../../assets/images/weather-forecast-screenshot.png";
 import furballFinder from "../../assets/images/furball-screenshot.png";
-import noteTaker from "../../assets/images/note-taker.png";
 import employeeTracker from "../../assets/images/employee-tracker.png";
 import financeHandler from "../../assets/images/finance-handler.png";
-import techBlog from "../../assets/images/tech-blog.png";
-import pwaTextEditor from "../../assets/images/pwa-text-editor.png";
+import bookSearch from "../../assets/images/book-search.png";
+import reduxStore from "../../assets/images/redux-store.png";
+import chatBox from "../../assets/images/chat-box.png";
 
 // This data is using to show all the projects using the Project component
 const projectData = [
-  {
-    imageSrc: passwordGenerator,
-    title: "Password Generator",
-    description:
-      "This project is about a password generator webpage which randomly generates a password that meets certain criteria. For the criteria, user can select a length of at least 8 characters and no more than 128 characters for the password. They can also choose whether or not to include lowercase, uppercase, numeric, and/or special characters.",
-    github: "https://github.com/dpkashrestha/password-generator",
-    deployed: "https://dpkashrestha.github.io/password-generator/",
-  },
-  {
-    imageSrc: codeQuiz,
-    title: "Code Quiz",
-    description:
-      "This is a code quizThis webpage is a timed javascript coding quiz with multiple-choice questions.",
-    github: "https://github.com/dpkashrestha/javascript-code-quiz",
-    deployed: "https://dpkashrestha.github.io/javascript-code-quiz/",
-  },
-  {
-    imageSrc: workDayScheduler,
-    title: "Work Day Scheduler",
-    description:
-      "This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.",
-    github: "https://github.com/dpkashrestha/work-day-scheduler",
-    deployed: "https://dpkashrestha.github.io/work-day-scheduler/",
-  },
-  {
-    imageSrc: weatherForecast,
-    title: "Weather Forecast",
-    description:
-      "This is a weather widget dashboard where you can search your city to get the current and five day forecast.",
-    github: "https://github.com/dpkashrestha/weather-dashboard",
-    deployed: "https://dpkashrestha.github.io/weather-dashboard/",
-  },
   {
     imageSrc: furballFinder,
     title: "Furball Finder",
     description:
       "Furball Finder allows users to search for a new pet in their area via: type, age, size and gender. After entering the desired information they will be shown results in their area via the Petfinder API and Google Maps API. They can then be given directions to their chosen pet!",
     github: "https://github.com/dpkashrestha/furball-finder",
-    deployed: "https://firefoxflareon.github.io/Group-Project-1/",
-  },
-  {
-    imageSrc: noteTaker,
-    title: "Note Taker",
-    description:
-      "Note Taker application is used to write and save notes. This application will use an Express.js backend and will save and retrieve note data from a JSON file.",
-    github: "https://github.com/dpkashrestha/note-taker",
-    deployed: "https://dpka-note-taker.onrender.com/",
+    deployed: "https://dpkashrestha.github.io/furball-finder",
   },
   {
     imageSrc: employeeTracker,
@@ -75,20 +31,28 @@ const projectData = [
     deployed: "https://finance-handlers.onrender.com/home",
   },
   {
-    imageSrc: techBlog,
-    title: "Tech Blog",
+    imageSrc: bookSearch,
+    title: "Book Search Engine",
     description:
-      "Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies.This project is a CMS-style blog site, where developers can publish their blog posts and comment on other developer's posts as well.",
-    github: "https://github.com/dpkashrestha/tech-blog",
-    deployed: "https://dpka-tech-blog.onrender.com/",
+      "This project builds a Google Books API search engine, which is integrated with a GraphQL API powered by Apollo Server. The application is constructed using the MERN (MongoDB, Express.js, React, Node.js) stack, with a React front end for the user interface, a MongoDB database for storing data, and a Node.js/Express.js server to handle API requests and responses.",
+    github: "https://github.com/dpkashrestha/book-search-engine",
+    deployed: "https://dpka-book-search-engine.onrender.com/",
   },
   {
-    imageSrc: pwaTextEditor,
-    title: "PWA Text Editor",
+    imageSrc: reduxStore,
+    title: "E-commerce Platform",
     description:
-      "This app is a single-page application that meets the PWA criteria. It features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application also functions offline.",
-    github: "https://github.com/dpkashrestha/pwa-text-editor",
-    deployed: "https://dpka-text-editor.onrender.com/",
+      "The open-source JavaScript library Redux remains the industry standard for managing complex state in a large-scale React application. This project refactors an e-commerce platform that manages global state using React’s Context API to use Redux instead.",
+    github: "https://github.com/dpkashrestha/redux-store",
+    deployed: "https://dpka-redux-store.onrender.com",
+  },
+  {
+    imageSrc: chatBox,
+    title: "chat Box",
+    description:
+      "Chat-Box is a convenient messaging application developed for people who enjoy the social life, work life, and chatting with their peers. In this application, you will find that you can donate to a chairty of your choice once you land on the login/sign up page. Within, this same feature, if you are a returning quest, you can login and see that-like any other chat app. All of your conversations are stored, as pleased. In Chat-Box, you will find that not only can you be a social butterfly, but you can customize an avatar to display as your profile picture. As the developers, we hope you enjoy this app as much as we enjoyed creating it",
+    github: "https://github.com/dpkashrestha/Chat-Box",
+    deployed: "https://chat-box-e47q.onrender.com",
   },
 ];
 
