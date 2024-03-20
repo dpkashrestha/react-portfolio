@@ -51,7 +51,7 @@ const projectData = [
     title: "chat Box",
     description:
       "Chat-Box is a convenient messaging application developed for people who enjoy the social life, work life, and chatting with their peers. In this application, you will find that you can donate to a chairty of your choice once you land on the login/sign up page. Within, this same feature, if you are a returning quest, you can login and see that-like any other chat app. All of your conversations are stored, as pleased. In Chat-Box, you will find that not only can you be a social butterfly, but you can customize an avatar to display as your profile picture. As the developers, we hope you enjoy this app as much as we enjoyed creating it",
-    github: "https://github.com/dpkashrestha/Chat-Box",
+    github: "https://github.com/dpkashrestha/chat-box",
     deployed: "https://chat-box-e47q.onrender.com",
   },
 ];
