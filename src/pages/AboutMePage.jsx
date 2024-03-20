@@ -1,4 +1,4 @@
-import Avatar from "../assets/images/avatar.png";
+import Avatar from "../assets/images/profile.jpg";
 
 function AboutMePage() {
   return (
@@ -14,8 +14,8 @@ function AboutMePage() {
             developer on a journey of constant learning and innovation.
           </p>
           <p>
-            Driven by a growing interest in software development, I am close to
-            completing edX bootcamp with the University of Minnosota,
+            Driven by a growing interest in software development, I have
+            completed edX bootcamp with the University of Minnosota,
             specializing in full stack application development. This experience
             has been immensely rewarding, fueling my enthusiasm for creating
             impactful solutions.

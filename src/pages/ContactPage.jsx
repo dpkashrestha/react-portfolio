@@ -53,7 +53,7 @@ function Contact() {
       <div className="col d-flex justify-content-center pt-">
         <Form onSubmit={handleSubmit} className="form">
           <Form.Group controlId="formName">
-            <Form.Label className="mt-5">Name</Form.Label>
+            {/* <Form.Label className="mt-5">Name</Form.Label> */}
             <Form.Control
               type="text"
               name="name"
@@ -65,7 +65,7 @@ function Contact() {
           </Form.Group>
 
           <Form.Group controlId="formEmail">
-            <Form.Label>Email address *</Form.Label>
+            {/* <Form.Label>Email address *</Form.Label> */}
             <InputGroup hasValidation>
               <Form.Control
                 type="email"
@@ -78,14 +78,14 @@ function Contact() {
                 required
                 isInvalid={!validEmail}
               />
-              <Form.Control.Feedback type="invalid">
+              {/* <Form.Control.Feedback type="invalid">
                 Please input a valid email.
-              </Form.Control.Feedback>
+              </Form.Control.Feedback> */}
             </InputGroup>
           </Form.Group>
 
           <Form.Group controlId="formMessage">
-            <Form.Label>Message *</Form.Label>
+            {/* <Form.Label>Message *</Form.Label> */}
             <InputGroup hasValidation>
               <Form.Control
                 as="textarea"
