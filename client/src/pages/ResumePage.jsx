@@ -1,6 +1,6 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
-import dpkaResume from "../assets/dpka-resume-dummy.pdf";
+import dpkaResume from "../assets/dipika-resume.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 

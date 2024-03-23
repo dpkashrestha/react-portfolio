@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form, Button, InputGroup } from "react-bootstrap";
+import { Form, Button, InputGroup, Modal } from "react-bootstrap";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -7,6 +7,7 @@ function Contact() {
     email: "",
     message: "",
   });
+  const [showModal, setShowModal] = useState(false);
 
   const [validEmail, setValidEmail] = useState(true);
   const [validMessage, setValidMessage] = useState(true);
@@ -20,9 +21,27 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("submitting form with data:", formData);
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setShowModal(true); // Show success modal
+        setFormData({ name: "", email: "", message: "" }); // Clear form fields
+      } else {
+        console.error("Error sending email");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
   };
 
   const handleOnBlur = (e) => {
@@ -53,7 +72,6 @@ function Contact() {
       <div className="col d-flex justify-content-center pt-">
         <Form onSubmit={handleSubmit} className="form">
           <Form.Group controlId="formName">
-            {/* <Form.Label className="mt-5">Name</Form.Label> */}
             <Form.Control
               type="text"
               name="name"
@@ -65,7 +83,6 @@ function Contact() {
           </Form.Group>
 
           <Form.Group controlId="formEmail">
-            {/* <Form.Label>Email address *</Form.Label> */}
             <InputGroup hasValidation>
               <Form.Control
                 type="email"
@@ -78,14 +95,13 @@ function Contact() {
                 required
                 isInvalid={!validEmail}
               />
-              {/* <Form.Control.Feedback type="invalid">
+              <Form.Control.Feedback type="invalid">
                 Please input a valid email.
-              </Form.Control.Feedback> */}
+              </Form.Control.Feedback>
             </InputGroup>
           </Form.Group>
 
           <Form.Group controlId="formMessage">
-            {/* <Form.Label>Message *</Form.Label> */}
             <InputGroup hasValidation>
               <Form.Control
                 as="textarea"
@@ -108,6 +124,18 @@ function Contact() {
             Submit
           </Button>
         </Form>
+
+        <Modal show={showModal} onHide={() => setShowModal(false)}>
+          <Modal.Header closeButton>
+            <Modal.Title>Email Sent</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Your email has been sent successfully.</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={() => setShowModal(false)}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     </>
   );
