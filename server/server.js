@@ -7,6 +7,13 @@ const app = express();
 const PORT = 3001;
 
 app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// if we're in production, serve client/build as static assets
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../client/build")));
+}
 
 // Email sending endpoint
 app.post("/api/send-email", (req, res) => {
