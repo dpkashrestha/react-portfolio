@@ -32,7 +32,7 @@ npm install
 
 ## Deployed App
 
-[https://dpka-react-portfolio-245ddd985737.herokuapp.com/]
+https://dpka-react-portfolio-245ddd985737.herokuapp.com/
 
 ## License
 
