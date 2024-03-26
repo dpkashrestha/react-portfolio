@@ -6,7 +6,7 @@ This project builds a portfolio web page as a single-page application using Reac
 
 The application is built with single responsibility components laid out on various pages. The navigation is managed with "react-router-dom". I have also used "react-bootstrap" library components to ease the content design.
 
-It is deployed on `Netlify`.
+It is deployed on `Heroku`.
 
 ## Table of Contents
 
