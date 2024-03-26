@@ -32,7 +32,7 @@ npm install
 
 ## Deployed App
 
-[https://main--spontaneous-cobbler-6ad048.netlify.app/](https://dpka-react-portfolio-245ddd985737.herokuapp.com/)
+[https://dpka-react-portfolio-245ddd985737.herokuapp.com/]
 
 ## License
 
